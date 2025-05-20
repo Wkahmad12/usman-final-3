@@ -1,0 +1,103 @@
+/* Full-page background styling */
+.login {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/background.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Logo styling */
+.login-logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+/* Form container */
+.login-form {
+    width: 100%;
+    max-width: 400px;
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 15px;
+    padding: 40px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Input fields */
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #222;
+    color: #fff;
+}
+
+/* Checkbox and Remember Me alignment */
+.remember-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+/* Checkbox styling */
+.remember-container input {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+/* Submit button styling */
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background: #e50914;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background: #b20710;
+}
+
+/* Forgot Password link */
+.forgot-password-link {
+    display: inline-block;
+    font-size: 14px;
+    color: #fff; /* White color */
+    text-decoration: none;
+    margin-top: 10px;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.forgot-password-link:hover {
+    color: #e50914; /* Red color on hover */
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Links in the form switch section */
+.form-switch {
+    margin-top: 30px;
+    color: #737373;
+}
+
+.form-switch span {
+    margin-left: 6px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}

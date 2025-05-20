@@ -1,0 +1,113 @@
+.upcoming-container {
+    padding: 20px;
+    background-color: #121212;
+    color: white;
+  }
+  
+  .upcoming-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-container {
+    position: absolute; /* This makes the search bar position fixed on the top left */
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+  }
+  
+  .search-input {
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  .search-input::placeholder {
+    color: #bbb;
+  }
+  
+  .movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 60px;
+  }
+  
+  .movie-card {
+    background-color: #333;
+    width: 220px;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  
+  .movie-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .movie-poster {
+    width: 100%;
+    height: auto;
+  }
+  
+  .movie-details {
+    padding: 10px;
+  }
+  
+  .movie-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .movie-release-date {
+    font-size: 0.9rem;
+    color: #bbb;
+  }
+  
+  .movie-overview {
+    font-size: 0.9rem;
+    color: #ddd;
+    height: 70px;
+    overflow: hidden;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    position: relative;
+    width: 80%;
+    max-width: 900px;
+    background-color: #121212;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  

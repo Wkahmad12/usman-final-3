@@ -1,0 +1,64 @@
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.hero_img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    mask-image: linear-gradient(to right, transparent, black 75%);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 75%);
+}
+
+.hero-title {
+    position: absolute;
+    bottom: 20%;
+    left: 6%;
+    max-width: 50%;
+    color: white;
+    text-align: left;
+}
+
+.hero-title p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.hero-button {
+    display: flex;
+    gap: 15px;
+}
+
+.hero-button button {
+    padding: 15px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.play {
+    background-color: red;
+    color: white;
+}
+
+.play:hover {
+    background-color: darkred;
+}
+
+.info {
+    background-color: grey;
+    color: white;
+}
+
+.info:hover {
+    background-color: darkgray;
+}
+
+.more-card{
+    padding-left: 2%;
+}
