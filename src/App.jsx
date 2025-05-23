@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import Login from './pages/Login/Login';
-import Player from './pages/Player/Player';
 import { onAuthStateChanged, signOut } from 'firebase/auth';
 import { auth } from './firebase';
 import TV from './pages/tv-list/TV';  
@@ -48,7 +47,7 @@ const App = () => {
         
         <Route path="/" element={<Home onSignOut={handleSignOut} />} />
         <Route path="/login" element={<Login isLoggedOut={isLoggedOut} />} />
-        <Route path="/player/:id" element={<Player />} />
+    
         <Route path="/tvshows" element={<TV />} />
         <Route path="/UpComing" element={<UpComing />} />
         <Route path="/Song" element={<Song />} />
